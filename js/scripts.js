@@ -11,11 +11,16 @@
 
 // Business Logic
 function digitReplacer(inputtedNumber){
-  let firstArray = inputtedNumber.split("").map((x) => parseInt(x));
-  // const secondArray = x
-  console.log(firstArray);
-
-
-
+  let firstValue = inputtedNumber.split("").map((x) => parseInt(x));
+  const secondArray = [];
+  console.log(firstValue)
+  for (let i = 0; i <= inputtedNumber; i-- ) {
+    return secondArray.push(firstArray);
+  };
+  console.log(secondArray);
+  
+  
+  
 }
-digitReplacer("5");
+digitReplacer("7");
+// const secondArray = firstArray.fill().map((i) => i++);
