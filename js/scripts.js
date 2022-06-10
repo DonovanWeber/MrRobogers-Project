@@ -18,15 +18,15 @@ function digitReplacer(inputtedNumber) {
   console.log(thirdArray)
   let replaceArray = [];
   for(let i = 0; i < thirdArray.length; i++) {
-    if (thirdArray[i].includes('3')) {
-    replaceArray.push( "Won't you be my neighbor?"); 
-    } else {
-      
+    if (thirdArray.includes('3')) {
+     replaceArray = thirdArray.replace('3', "Won't you be my neighbor?"); 
+    }  else (!thirdArray.includes('3')); {
+      replaceArray.push(thirdArray);
     };
+    return replaceArray
   };
-  return replaceArray
-  
-};
+  }
+
 
 digitReplacer("13");
 
