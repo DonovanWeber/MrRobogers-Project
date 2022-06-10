@@ -13,14 +13,13 @@
 
 ## Description
 
-This webpage is a programming language suggester that helps beginner coders
-or people intereseted in coding decide which language to start with. The webpage asks a series questions and based on the results provides a language you should start with.
+\
 
 ## Setup/Installation Requirements
 
-* Clone my language-suggester repository from Github
+* Clone my       repository from Github
 * Go to the first level of the directory
-* Open language-suggester/index.html
+* Open    /index.html
 
 ## Known Bugs
 
