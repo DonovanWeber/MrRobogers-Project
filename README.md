@@ -56,7 +56,7 @@ Test:"It should replace all numbers with a digit of 3 with "Wont you be my neigh
 Code: digitReplacer("13")
 const firstArrayValue = inputtedNumber.split().map((x)=> parseInt(x));
   const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
-Expected Output: [1,2,"Won't you be my neighbor?",4,5,6,7,8,9,10,11,12,"Won't you be my neighbor?"]
+Expected Output: [1,2,"Won't you be my neighbor?",4,5,6,7,8,9,10,11,12,"Won't you be my neighbor?"] 
 
 
 ## License
