@@ -10,17 +10,26 @@
 
 
 // Business Logic
-function digitReplacer(inputtedNumber){
-  let firstValue = inputtedNumber.split("").map((x) => parseInt(x));
-  const secondArray = [];
-  console.log(firstValue)
-  for (let i = 0; i <= inputtedNumber; i-- ) {
-    return secondArray.push(firstArray);
-  };
+function digitReplacer(inputtedNumber) {
+  let firstArrayValue = inputtedNumber.split("").map((x)=> parseInt(x));
+  const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
+
   console.log(secondArray);
+  console.log(firstArrayValue);
+
+  // const thirdArray = [0].fill(1).map((_, i) => i=1);
+  // for (let i = 0; i <= inputtedNumber; i++ ) {
+  //   return secondArray.push(firstArrayValue);
+  return secondArray
+};
+
   
   
   
-}
+//}
 digitReplacer("7");
+
+function fillArray() {
+  Array().fill(1).map( (_, i) => i+1 )
+}
 // const secondArray = firstArray.fill().map((i) => i++);
