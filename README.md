@@ -41,11 +41,22 @@ const firstArrayValue = inputtedNumber.split().map((x)=> parseInt(x));
   const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
 Expected Output:[1,2,3,4,5,6,7] 
 
-Test: "It should return "Wont you be my neighbor?" when the user inputs a number with any digit being 3."
+Test: "It should return "Wont you be my neighbor?" when the user inputs a number the number 3 inside of an array."
 Code: digitReplacer("3")
 const firstArrayValue = inputtedNumber.split().map((x)=> parseInt(x));
   const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
-Expected Output: "Wont you be my neighbor?"
+  for(let i = 0; i <= secondArray.length; i++) {
+    if (secondArray[i] === 3) {
+      secondArray[i] = "Won't you be my neighbor?"
+    } 
+  };
+Expected Output: [1,2,"Wont you be my neighbor?"]
+
+Test:"It should replace all numbers with a digit of 3 with "Wont you be my neighbor"
+Code: digitReplacer("13")
+const firstArrayValue = inputtedNumber.split().map((x)=> parseInt(x));
+  const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
+Expected Output: [1,2,"Won't you be my neighbor?",4,5,6,7,8,9,10,11,12,"Won't you be my neighbor?"]
 
 
 ## License

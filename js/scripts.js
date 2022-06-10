@@ -12,14 +12,21 @@
 // Business Logic
 function digitReplacer(inputtedNumber) {
   const firstArrayValue = inputtedNumber.split().map((x)=> parseInt(x));
-  const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
-  for(let i = 0; i <= secondArray.length; i++) {
-    if (secondArray[i] === 3) {
-      secondArray[i] = "Won't you be my neighbor?"
-    } 
+  const secondArray = Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
+  let thirdArray = secondArray.toString().split(',');
+  console.log(secondArray);
+  console.log(thirdArray)
+  let replaceArray = [];
+  for(let i = 0; i < thirdArray.length; i++) {
+    if (thirdArray[i].includes('3')) {
+    replaceArray.push( "Won't you be my neighbor?"); 
+    } else {
+      
+    };
   };
- return secondArray
+  return replaceArray
+  
 };
 
-digitReplacer("3");
+digitReplacer("13");
 
