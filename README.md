@@ -37,7 +37,15 @@ Expected Output: 5
 
 Test: "It should return an array of numbers from 0 to the user's inputted number."
 Code: digitReplacer("7")
+const firstArrayValue = inputtedNumber.split().map((x)=> parseInt(x));
+  const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
 Expected Output:[1,2,3,4,5,6,7] 
+
+Test: "It should return "Wont you be my neighbor?" when the user inputs a number with any digit being 3."
+Code: digitReplacer("3")
+const firstArrayValue = inputtedNumber.split().map((x)=> parseInt(x));
+  const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
+Expected Output: "Wont you be my neighbor?"
 
 
 ## License

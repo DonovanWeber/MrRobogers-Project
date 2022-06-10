@@ -11,25 +11,15 @@
 
 // Business Logic
 function digitReplacer(inputtedNumber) {
-  let firstArrayValue = inputtedNumber.split("").map((x)=> parseInt(x));
+  const firstArrayValue = inputtedNumber.split().map((x)=> parseInt(x));
   const secondArray =   Array(firstArrayValue[0]).fill(1).map( (_, i) => i + 1);
-
-  console.log(secondArray);
-  console.log(firstArrayValue);
-
-  // const thirdArray = [0].fill(1).map((_, i) => i=1);
-  // for (let i = 0; i <= inputtedNumber; i++ ) {
-  //   return secondArray.push(firstArrayValue);
-  return secondArray
+  for(let i = 0; i <= secondArray.length; i++) {
+    if (secondArray[i] === 3) {
+      secondArray[i] = "Won't you be my neighbor?"
+    } 
+  };
+ return secondArray
 };
 
-  
-  
-  
-//}
-digitReplacer("7");
+digitReplacer("3");
 
-function fillArray() {
-  Array().fill(1).map( (_, i) => i+1 )
-}
-// const secondArray = firstArray.fill().map((i) => i++);
