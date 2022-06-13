@@ -11,29 +11,33 @@
 
 // Business Logic
 function digitReplacer(inputtedNumber) {
-  
-  
- 
   let arrayOfNumbers= [];
   for(let i = 1; i <= inputtedNumber; i++) {
     arrayOfNumbers.push(i)
-
   };
-  console.log(arrayOfNumbers);
-  const arrayOfString = arrayOfNumbers.map(x => x.toString());
+  let arrayOfString = arrayOfNumbers.map(x => x.toString());
   for (let i = 0; i <= arrayOfString.length; i++) {
     arrayOfString[i]
-    console.log(arrayOfString[i])
-    if (arrayOfString[i].includes('3')) {
-      arrayOfString.splice()
-      console.log("includes 3");
-    };
-  };
+  
+    if ((arrayOfString[i]+'').indexOf('3') > -1) {
+      arrayOfString.splice(i, 1, "Won't you be my neighbor")
+    } else if ((arrayOfString[i]+'').indexOf('2') > -1) {
+      arrayOfString.splice(i, 1, "Boop!")
+    } else if ((arrayOfString[i]+'').indexOf('1') > -1) {
+      arrayOfString.splice(i, 1, "Beep!")
+    } else {
 
+    }
+  };
   console.log(arrayOfString);
+  return arrayOfString;
+  // console.log();
  
 
 };
-digitReplacer(30);
+digitReplacer(44);
+
+// ui logic
+
 
 
