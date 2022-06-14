@@ -59,7 +59,7 @@ if ((arrayOfString[i]+'').indexOf('3') > -1) {
     } else if ((arrayOfString[i]+'').indexOf('1') > -1) {
       arrayOfString.splice(i, 1, "Beep! ");
     } else {
-
+    
     }
   };
   Expected Output: ["Beep!","Boop!","Won't you be my neighbor?",4,5,6,7,8,9,10,"Beep!","Boop!","Won't you be my neighbor?"] 

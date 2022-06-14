@@ -14,7 +14,7 @@ function digitReplacer(inputtedNumber) {
     } else if ((arrayOfString[i]+'').indexOf('1') > -1) {
       arrayOfString.splice(i, 1, "Beep! ");
     } else {
-
+      
     }
   };
   return arrayOfString.join('');
