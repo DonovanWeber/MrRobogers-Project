@@ -2,7 +2,7 @@
 
 #### By Donovan Weber
 
-#### Mr.Robogers Neighborhood is a web application that will turn any integer into a string of "Beeps!", "Boops!", and "Won't you be my neighbor?"
+#### Mr.Robogers Neighborhood is a web application that will turn any positive integer you input into a string of "Beeps!", "Boops!", and "Won't you be my neighbor?"
 
 ## Technologies Used
 
@@ -17,22 +17,17 @@ Once a user submits any positive number they like Mr.Roboger will return every n
 
 ## Setup/Installation Requirements
 
-* Clone my       repository from Github
+* Clone my MrRogobers-Project repository from Github
 * Go to the first level of the directory
 * Open mrrogober/index.html
 
 ## Known Bugs
 
-No known bugs contact me at [donovanweber03@gmail.com](mailto:donovanweber03@gmail.com) if any bugs are 
-found.
+No known bugs contact me at [donovanweber03@gmail.com](mailto:donovanweber03@gmail.com) if any bugs are found.
 
 ## Specs
 
 Describe: digitReplacer()
-
-Test: "It should return an integer when the user inputs a string of numbers"
-code: digitReplacer("5")
-Expected Output: 5 
 
 Test: "It should return an array of numbers from 0 to the user's inputted number."
 Code: digitReplacer(7)
@@ -55,6 +50,19 @@ if ((arrayOfString[i]+'').indexOf('3') > -1) {
       arrayOfString.splice(i, 1, "Boop! ");
 Expected Output: [1,"Boop!","Won't you be my neighbor?",4,5,6,7,8,9,10,11,"Boop!","Won't you be my neighbor?"] 
 
+Test: "It should replace all numbers with  digit of 1 with "Beep!" only if they do not have any digits with 2 or 3."
+Code: digitReplacer(13);
+if ((arrayOfString[i]+'').indexOf('3') > -1) {
+      arrayOfString.splice(i, 1, "Won't you be my neighbor? ");
+    } else if ((arrayOfString[i]+'').indexOf('2') > -1) {
+      arrayOfString.splice(i, 1, "Boop! ");
+    } else if ((arrayOfString[i]+'').indexOf('1') > -1) {
+      arrayOfString.splice(i, 1, "Beep! ");
+    } else {
+
+    }
+  };
+  Expected Output: ["Beep!","Boop!","Won't you be my neighbor?",4,5,6,7,8,9,10,"Beep!","Boop!","Won't you be my neighbor?"] 
 
 ## License
 
