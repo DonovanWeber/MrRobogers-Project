@@ -2,18 +2,18 @@
 
 #### By Donovan Weber
 
-#### Application that decides which programming language you should start with.
+#### Mr.Robogers Neighborhood is a web application that will turn any integer into a string of "Beeps!", "Boops!", and "Won't you be my neighbor?"
 
 ## Technologies Used
 
 * HTML
 * CSS
 * JavaScript
-
+* jQuery
+* Bootstrap 
 
 ## Description
-
-\
+Once a user submits any number they like Mr.Roboger will return every number starting at 1 to the users input and replace all instances of the number 3 with "Won't you be my neighbor". 
 
 ## Setup/Installation Requirements
 
